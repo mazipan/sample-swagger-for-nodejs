@@ -31,9 +31,9 @@ swagger project start
 <pre>
 swagger project edit
 </pre>
-- Open in browser
+- Open API documentation in browser
 <pre>
-http://localhost:10010/docs/#/default
+<a href="http://localhost:10010/docs/#/default">http://localhost:10010/docs/#/default</a>
 </pre>
 
 <br/>
