@@ -5,7 +5,7 @@ Sample of using <a href="http://swagger.io/">http://swagger.io/</a> for nodejs e
 
 <h3>Preview</h3>
 
-<h3>Using technology :</h3>
+<h3>Using technology</h3>
 - NodeJS and Expressjs API development
 - Swagger and Swagger UI for documentation
 
