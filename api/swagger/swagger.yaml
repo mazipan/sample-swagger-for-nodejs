@@ -41,7 +41,7 @@ paths:
       description: Insert new data Product
       parameters:
         - name: product
-          description: The name of the person to whom to say hello
+          description: Product will be inserted
           in: body
           required: true
           schema: 
@@ -64,6 +64,7 @@ paths:
       description: Returns product by id
       parameters:
         - name: id
+          description: id of product will be select
           type: number
           in: path
           required: true
@@ -83,9 +84,16 @@ paths:
       description: Update data product by id
       parameters:
         - name: id
+          description: id of product will be updated
           type: number
           in: path
           required: true
+        - name: product
+          description: Product information will be updated
+          in: body
+          required: true
+          schema: 
+            $ref: "#/definitions/ProductNoId"
       responses:
         "200":
           description: Success
@@ -102,6 +110,7 @@ paths:
       description: Delete data product by id
       parameters:
         - name: id
+          description: id of product will be deleted
           type: number
           in: path
           required: true
@@ -137,16 +146,12 @@ definitions:
         
   ProductNoId:
     properties:
-      _id:
-        type: string
       title:
         type: string
       description:
         type: string
       price:
         type: number
-      modified:
-        type: string
         
   ProductsResponse:
     required:
